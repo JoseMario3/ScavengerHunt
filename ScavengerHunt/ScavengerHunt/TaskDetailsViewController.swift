@@ -10,7 +10,7 @@ import UIKit
 import MapKit
 import PhotosUI
 
-class TaskDetailViewController: UIViewController, PHPickerViewControllerDelegate, MKMapViewDelegate {
+class TaskDetailsViewController: UIViewController, PHPickerViewControllerDelegate, MKMapViewDelegate {
     func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
         // Dismiss the picker
         picker.dismiss(animated: true)
@@ -203,7 +203,7 @@ class TaskDetailViewController: UIViewController, PHPickerViewControllerDelegate
 // TODO: Conform to MKMapKitDelegate + implement mapView(_:viewFor:) delegate method.
 
 // Helper methods to present various alerts
-extension TaskDetailViewController {
+extension TaskDetailsViewController {
 
     /// Presents an alert notifying user of photo library access requirement with an option to go to Settings in order to update status.
     func presentGoToSettingsAlert() {
